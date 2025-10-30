@@ -21,7 +21,7 @@ export default function Footer() {
               <p className="text-xs text-gray-300">logistics service</p>
             </div>
           </div>
-          <p className="text-gray-300 text-sm">
+          <p className="text-gray-300 text-sm md:text-[16px]">
             Somos una empresa dedicada a ofrecer soluciones logísticas de alta calidad para nuestros clientes.
           </p>
           <div>
@@ -41,7 +41,7 @@ export default function Footer() {
         </div>
         <div data-aos="fade-up" data-aos-delay="100">
           <h3 className="font-bold text-xl mb-4">Servicios</h3>
-          <ul className="space-y-2 text-gray-200 text-sm">
+          <ul className="space-y-2 text-gray-200 text-sm md:text-[16px]">
             <li>Transporte terrestre</li>
             <li>Almacenamiento</li>
             <li>Logística internacional</li>
@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
         <div data-aos="fade-up" data-aos-delay="200">
           <h3 className="font-bold text-xl mb-4">Contacto</h3>
-          <ul className="space-y-2 text-gray-200 text-sm">
+          <ul className="space-y-2 text-gray-200 text-sm md:text-[16px]">
             <li>Email: contacto@empresa.com</li>
             <li>Teléfono: +34 123 456 789</li>
             <li>C/ Falsa, 123 - Madrid</li>

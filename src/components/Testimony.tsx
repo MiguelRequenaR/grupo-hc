@@ -33,19 +33,22 @@ export default function Testimony() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 md:p-0">
         {
           testimonies.map((testimony) => (
-          <div key={testimony.id} className="bg-[#f8f8f8] p-10 shadow-lg" data-aos="fade-up" data-aos-delay="100">
-            <div className="flex items-center gap-2">
-              <img src={testimony.avatar} alt="avatar" className="w-20 h-20" />
+          <div key={testimony.id} className="bg-[#f8f8f8] p-10 shadow-lg relative group overflow-hidden cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+            <div className="absolute inset-0 bg-[#003d3d] -translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out z-0"></div>
+            <div className="relative z-10 flex items-center gap-5">
+              <img src={testimony.avatar} alt="avatar" className="w-20 h-20 object-cover rounded-full" />
               <div>
-                <h3 className="text-lg font-bold text-[#003d4d] mt-2">{testimony.name}</h3>
-                <p className="text-sm text-gray-500">{testimony.job}</p>
+                <h3 className="text-xl font-bold text-[#003d4d] mt-2 group-hover:text-white transition-colors duration-500">{testimony.name}</h3>
+                <p className="text-sm text-gray-500 group-hover:text-white transition-colors duration-500">{testimony.job}</p>
               </div>
             </div>
-            <div className="bg-[#f68b21] h-[2px] w-[80%] mx-auto my-5"></div>
-            <div>
-              <p className="text-sm text-[#003d4d]">
-                {testimony.testimony}
-              </p>
+            <div className="relative z-20">
+              <div className="bg-[#f68b21] h-[2px] w-[80%] mx-auto my-5"></div>
+              <div>
+                <p className="text-lg text-[#003d4d] group-hover:text-white transition-colors duration-500">
+                  {testimony.testimony}
+                </p>
+              </div>
             </div>
           </div>
           ))

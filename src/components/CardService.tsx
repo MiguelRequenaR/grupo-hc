@@ -32,6 +32,12 @@ export default function CardService() {
       title: "Traslado de Mercancía",
       description: "Ofrecemos servicio de traslado de mercancía a cualquier parte del mundo.",
     },
+    {
+      id: 6,
+      icon: "https://img.icons8.com/?size=48&id=vxdv9fQWaA77&format=png",
+      title: "Transporte Nacional",
+      description: "Ofrecemos servicios de transporte a nivel nacional para que su mercancía llegue a su destino sin problemas.",
+    }
   ]
   return (
     <div className="bg-[#003d4d]">
@@ -39,11 +45,14 @@ export default function CardService() {
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4" data-aos="fade-up">
             {services.map((service) => (
-              <div key={service.id} className="bg-white p-10 space-y-2">
-                <img src={service.icon} alt="icon" className="w-10 h-10" />
-                <h2 className="text-[#004364] font-bold text-xl">{service.title}</h2>
-                <p className="text-gray-500 text-sm">{service.description}</p>
-                <div className="bg-[#f68b21] h-[2px] w-[40%] mt-5"></div>
+              <div key={service.id} className="bg-white p-10 relative group overflow-hidden cursor-pointer">
+                <div className="absolute inset-0 bg-[#f68b21] -translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out z-0"></div>
+                <div className="relative z-10 space-y-4">
+                  <img src={service.icon} alt="icon" className="w-10 h-10" />
+                  <h2 className="text-[#004364] font-bold text-xl md:text-2xl group-hover:text-[#003d4d] transition-colors duration-500">{service.title}</h2>
+                  <p className="text-gray-500 text-sm md:text-lg group-hover:text-[#004364] transition-colors duration-500">{service.description}</p>
+                  <div className="bg-[#f68b21] h-0.5 w-[40%] mt-5 group-hover:w-full transition-all duration-500 ease-in-out group-hover:bg-white"></div>
+                </div>
               </div>
             ))}
           </div>

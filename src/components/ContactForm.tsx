@@ -55,9 +55,14 @@ export default function ContactForm() {
             <div> 
               <textarea name="" id="" placeholder="Mensaje" className="bg-white py-3 px-5 rounded-sm w-full border-none outline-none" />
             </div>
-            <button type="submit" className="bg-[#f68b21] text-white px-8 py-2 text-lg font-semibold flex items-center gap-3 overflow-hidden transition-all duration-500 ease-in-out uppercase hover:bg-white hover:text-black cursor-pointer">
-              Enviar
-              <ArrowRight className="w-5 h-5 " />
+            <button 
+              type="submit" 
+              className="relative bg-[#f68b21] text-white px-8 py-2 text-lg font-semibold flex items-center gap-3 overflow-hidden transition-all duration-500 ease-in-out group uppercase cursor-pointer">
+                <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+                <span className="relative z-10 flex items-center gap-3 group-hover:text-[#f68b21] transition-colors duration-500 uppercase">
+                  Enviar
+                  <ArrowRight className="w-5 h-5 " />
+                </span>
             </button>
           </form>
         </div>

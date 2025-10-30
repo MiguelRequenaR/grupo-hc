@@ -13,27 +13,33 @@ export default function CTA() {
       <div className="max-w-3xl mx-auto relative z-10">
         <h2 className="text-2xl md:text-4xl text-center font-bold text-white" data-aos="fade-up">¿Estás buscando el mejor servicio de transporte y logística?</h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-10">
-          <button className="bg-[#f68b21] text-white px-8 py-3 text-lg font-semibold flex items-center gap-3 overflow-hidden transition-all duration-500 ease-in-out uppercase hover:bg-white hover:text-black cursor-pointer" data-aos="zoom-in" data-aos-delay="100">
-            Contactanos
-            <ArrowRight className="w-5 h-5 " />
+          <button className="relative bg-[#f68b21] text-white px-8 py-3 text-lg font-semibold flex items-center gap-3 overflow-hidden transition-all duration-500 ease-in-out uppercase group cursor-pointer" data-aos="zoom-in" data-aos-delay="100">
+            <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+            <span className="relative z-10 flex items-center gap-3 group-hover:text-[#f68b21] transition-colors duration-500 uppercase">
+              Contactanos
+              <ArrowRight className="w-5 h-5 " />
+            </span>
           </button>
-          <button className="bg-[#003d4d] text-white px-8 py-3 text-lg font-semibold flex items-center gap-3 overflow-hidden transition-all duration-500 ease-in-out uppercase hover:bg-white hover:text-black cursor-pointer" data-aos="zoom-in" data-aos-delay="200">
-            Más detalles
-            <ArrowRight className="w-5 h-5 " />
+          <button className="relative bg-[#003d4d] text-white px-8 py-3 text-lg font-semibold flex items-center gap-3 overflow-hidden transition-all duration-500 ease-in-out uppercase group cursor-pointer" data-aos="zoom-in" data-aos-delay="200">
+            <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+            <span className="relative z-10 flex items-center gap-3 group-hover:text-[#003d4d] transition-colors duration-500 uppercase">
+              Más detalles
+              <ArrowRight className="w-5 h-5 " />
+            </span>
           </button>
         </div>
       </div>
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row bottom-[-200px] bg-white relative z-20 shadow-lg" data-aos="fade-up">
         <div className="w-full md:w-2/3 p-6 md:p-10 space-y-5">
           <h3 className="text-2xl font-bold text-[#003d4d]">¿Por qué elegirnos?</h3>
-          <p className="text-sm text-gray-500">
+          <p className="text-sm md:text-[16px] text-gray-500">
             Somos una empresa dedicada a ofrecer soluciones logísticas de alta calidad para nuestros clientes. Contamos con un equipo de profesionales expertos en el rubro que nos permite ofrecer soluciones adaptadas a las necesidades de cada cliente.
           </p>
           <div className="flex flex-row items-start sm:items-center gap-3">
             <div className="bg-[#f68b21] w-1 h-20"></div>
             <div>
-              <h4 className="text-sm font-bold text-[#f68b21]">Experiencia y Expertise</h4>
-              <p className="text-sm text-gray-500">
+              <h4 className="text-sm md:text-[16px] font-bold text-[#f68b21]">Experiencia y Expertise</h4>
+              <p className="text-sm md:text-[16px] text-gray-500">
                 Nuestra experiencia y expertise en el rubro nos permite ofrecer soluciones adaptadas a las necesidades de cada cliente.
               </p>
             </div>

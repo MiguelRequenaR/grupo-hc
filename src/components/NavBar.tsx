@@ -1,16 +1,23 @@
 import { Facebook, Instagram, Twitter, Youtube, MapPin, Timer, Mail, Phone, Menu, X } from "lucide-react"
 import logoP from "../assets/logoP.png"
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const navigate = useNavigate()
 
   const menuItems = [
-    { label: "Inicio"},
-    { label: "Nosotros"},
-    { label: "Servicios"},
-    { label: "Contacto"},
+    { label: "Inicio", href: "/"},
+    { label: "Nosotros", href: "/nosotros"},
+    { label: "Servicios", href: "/servicios"},
+    { label: "Contacto", href: "/contacto"},
   ]
+
+  const handleNavigation = (href: string) => {
+    navigate(href)
+    setIsMenuOpen(false)
+  }
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
@@ -63,6 +70,7 @@ export default function NavBar() {
               {menuItems.map((item) => (
                 <div
                   key={item.label}
+                  onClick={() => handleNavigation(item.href)}
                   className="flex items-center gap-1 cursor-pointer hover:text-[#f68b21] transition-colors duration-200 text-[#003d4d] font-semibold relative group"
                 >
                   <span className="pb-1 relative">
@@ -91,8 +99,8 @@ export default function NavBar() {
               clipPath: 'polygon(30px 0, 100% 0, 100% 100%, 0 100%)'
             }}
           >
-            <div className="flex items-center gap-3">
-              <div className="bg-white/10 p-3 rounded-full">
+            <div className="flex items-center gap-3 group cursor-pointer">
+              <div className="bg-white/10 p-3 rounded-full group-hover:scale-110 group-hover:bg-[#f68b21] transition-all duration-500 ease-in-out">
                 <Phone className="w-6 h-6" />
               </div>
               <div className="flex flex-col">
@@ -113,7 +121,7 @@ export default function NavBar() {
               <li
                 key={item.label}
                 className="px-6 py-4 text-white font-semibold cursor-pointer hover:bg-[#f68b21] transition-colors duration-200 border-b border-white/10"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => handleNavigation(item.href)}
               >
                 {item.label}
               </li>
