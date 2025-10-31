@@ -5,7 +5,7 @@ import TeamSection from "../components/TeamSection"
 export default function About() {
   return (
     <>
-      <section className="relative w-full h-[50vh] overflow-hidden">
+      <section className="relative w-full h-[60vh] overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
@@ -53,7 +53,7 @@ export default function About() {
               Somos una empresa con más de 10 años de experiencia en el rubro logístico, brindando soluciones integrales de logística y transporte, asegurando entregas seguras, puntuales y eficientes para que su mercancía llegue a destino sin contratiempos.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10" data-aos="fade-up">
               <div className="flex items-center gap-2">
                 <ListCheck className="w-6 h-6 text-[#f68b21]" />
                 <span>Servicios Nacionales</span>
@@ -103,7 +103,7 @@ export default function About() {
       </section>
       <section className="py-20">
         <div
-          className="w-full flex flex-col justify-center gap-6 relative bg-fixed bg-center bg-cover h-[60vh] md:h-[80vh]"
+          className="w-full flex flex-col justify-center gap-6 relative bg-fixed bg-center bg-cover h-[80vh]"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171')",

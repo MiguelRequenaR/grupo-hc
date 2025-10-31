@@ -30,7 +30,7 @@ export default function ServiceSection() {
     <div className="max-w-7xl mx-auto pb-40">
       <div className="flex flex-col items-center justify-center my-10" data-aos="fade-up">
         <span className="text-center text-[#f68b21] font-semibold">Servicios Logísticos</span>
-        <h1 className="text-3xl text-center font-bold text-[#003d4d] mt-2">Servicios Logísticos Populares</h1>
+        <h2 className="text-3xl text-center font-bold text-[#003d4d] mt-2">Servicios Logísticos Populares</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-28 md:gap-4">
         {logisticsServices.map((service) => (

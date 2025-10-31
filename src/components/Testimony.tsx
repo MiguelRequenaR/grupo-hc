@@ -28,7 +28,7 @@ export default function Testimony() {
     <div className="max-w-7xl mx-auto pb-40">
       <div className="flex flex-col items-center justify-center my-10" data-aos="fade-up">
         <span className="text-center text-[#f68b21] font-semibold">Que dicen nuestros clientes</span>
-        <h1 className="text-3xl text-center font-bold text-[#003d4d] mt-2">Historias de nuestros clientes</h1>
+        <h2 className="text-3xl text-center font-bold text-[#003d4d] mt-2">Historias de nuestros clientes</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 md:p-0">
         {

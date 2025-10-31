@@ -26,11 +26,12 @@ export default function TeamSection() {
     <>
       <div className="flex flex-col items-center justify-center" data-aos="fade-up">
         <span className="text-center text-[#f68b21] font-semibold">Nuestro Equipo</span>
-        <h1 className="text-3xl text-center font-bold text-[#003d4d] mt-2">Las mentes brillantes detrás</h1>
+        <h2 className="text-3xl text-center font-bold text-[#003d4d] mt-2">Las mentes brillantes detrás</h2>
+        <p className="text-center text-sm text-gray-500">Conoce a las mentes brillantes detrás de nuestro éxito.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-15">
           {
             team.map((item) => (
-              <div key={item.id} className="bg-[#003d4d] rounded-t-full relative overflow-hidden group cursor-pointer">
+              <div key={item.id} className="bg-[#003d4d] rounded-t-full relative overflow-hidden group cursor-pointer" data-aos="fade-up">
                 <div className="absolute inset-0 bg-[#f68b21] -translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out"></div>
                 <div className="relative z-10">
                   <img src={item.avatar} alt="team" className="w-full h-full object-cover" />
