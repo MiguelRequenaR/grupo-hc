@@ -1,17 +1,17 @@
 import { Facebook, Instagram, Twitter, Youtube, MapPin, Timer, Mail, Phone, Menu, X } from "lucide-react"
 import logoP from "../assets/logoP.png"
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const navigate = useNavigate()
 
   const menuItems = [
-    { label: "Inicio", href: "/"},
-    { label: "Nosotros", href: "/nosotros"},
-    { label: "Servicios", href: "/servicios"},
-    { label: "Contacto", href: "/contacto"},
+    { label: "Inicio", href: "/" },
+    { label: "Nosotros", href: "/nosotros" },
+    { label: "Servicios", href: "/servicios" },
+    { label: "Contacto", href: "/contacto" },
   ]
 
   const handleNavigation = (href: string) => {
@@ -52,17 +52,19 @@ export default function NavBar() {
           <div
             className="relative bg-[#00596d] h-full flex items-center px-4 md:px-8 pr-8 md:pr-16 logo-clip"
           >
-            <div className="flex items-center gap-2 md:gap-3">
-              <div className="">
-                <img src={logoP} alt="logo" className="w-32 md:w-52 object-contain" />
+            <Link to="/">
+              <div className="flex items-center gap-2 md:gap-3">
+                <div className="">
+                  <img src={logoP} alt="logo" className="w-32 md:w-52 object-contain" />
+                </div>
+                <div className="flex flex-col">
+                  <h1 className="text-xl md:text-2xl font-bold text-[#f68b21]">
+                    Grupo<span className="text-white">HC</span>
+                  </h1>
+                  <p className="text-xs text-gray-300">logistics service</p>
+                </div>
               </div>
-              <div className="flex flex-col">
-                <h1 className="text-xl md:text-2xl font-bold text-[#f68b21]">
-                  Grupo<span className="text-white">HC</span>
-                </h1>
-                <p className="text-xs text-gray-300">logistics service</p>
-              </div>
-            </div>
+            </Link>
           </div>
 
           <nav className="hidden md:flex flex-1 justify-center bg-[#c8d8dd] h-full">
@@ -112,9 +114,8 @@ export default function NavBar() {
         </div>
 
         <div
-          className={`md:hidden absolute top-full left-0 right-0 bg-[#00596d] shadow-lg transition-all duration-300 ease-in-out overflow-hidden ${
-            isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
-          }`}
+          className={`md:hidden absolute top-full left-0 right-0 bg-[#00596d] shadow-lg transition-all duration-300 ease-in-out overflow-hidden ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+            }`}
         >
           <ul className="flex flex-col py-4">
             {menuItems.map((item) => (
