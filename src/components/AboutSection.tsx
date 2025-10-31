@@ -18,9 +18,6 @@ export default function AboutSection() {
         <div className="flex items-center w-fit gap-5" data-aos="fade-up" data-aos-delay="200">
           <div className="flex flex-col md:flex-row items-center gap-5 p-5">
             <div className="bg-[#f68b21] w-2 h-20 hidden md:block"></div>
-            <div className="border-2 border-[#f68b21] p-2 border-dashed">
-              <img src="https://img.icons8.com/?size=48&id=0yWaTY5VFxAQ&format=png" alt="about" className="w-10 h-10 md:w-20 md:h-10" />
-            </div>
             <div>
               <h3 className="text-base md:text-xl font-bold text-[#003d4d]">Seguimiento en tiempo-real</h3>
               <p className="text-sm md:text-lg">Mantenemos un seguimiento en tiempo real de la mercancía.</p>

@@ -6,23 +6,20 @@ export default function ServiceSection() {
     {
       id: 1,
       image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=1200&auto=format&fit=crop",
-      icon: "https://img.icons8.com/?size=48&id=ateOmIb82zBa&format=png",
-      title: "Seguimiento",
-      description: "Transporte por carretera",
+      title: "Rapidez",
+      description: "Transporte de carga pesada",
     },
     {
       id: 2,
       image: "https://images.unsplash.com/photo-1559297434-fae8a1916a79?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
-      icon: "https://img.icons8.com/?size=48&id=0yWaTY5VFxAQ&format=png",
-      title: "Seguridad",
-      description: "Seguridad de la mercancía",
+      title: "Cobertura",
+      description: "Transporte de carga consolidada",
     },
     {
       id: 3,
       image: "https://images.unsplash.com/photo-1600352706622-cb5221ea6c59?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
-      icon: "https://img.icons8.com/?size=48&id=4l2As6xQb797&format=png",
-      title: "Precio Transparente",
-      description: "Precios claros y justos",
+      title: "Logística",
+      description: "Transporte de carga a granel",
     }
   ]
 
@@ -36,9 +33,6 @@ export default function ServiceSection() {
         {logisticsServices.map((service) => (
           <div key={service.id} className="relative group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
             <img src={service.image} alt="service" className="w-full h-full object-cover" />
-            <div className="absolute top-0 left-0 bg-white p-3 rounded-br-xl">
-              <img src={service.icon} alt="icon" />
-            </div>
             <div className="absolute bottom-[-70px] left-1/2 -translate-x-1/2 w-10/12 bg-white p-7 border-l-4 border-[#f68b21] shadow-lg overflow-hidden cursor-pointer">
               <div className="absolute inset-0 bg-white transition-all duration-500 ease-in-out z-0"></div>
               <div className="absolute inset-0 bg-[#f68b21] -translate-x-full group-hover:translate-x-0 transition-all duration-500 ease-in-out z-10"></div>
