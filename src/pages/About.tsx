@@ -106,7 +106,7 @@ export default function About() {
       </section>
       <section className="py-20">
         <div
-          className="w-full flex flex-col justify-center gap-6 relative bg-fixed bg-center bg-cover h-[80vh]"
+          className="w-full flex flex-col justify-center gap-6 relative bg-scroll md:bg-fixed bg-center bg-cover h-[80vh]"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171')",
@@ -163,7 +163,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="py-20">
+      <section >
         <TeamSection />
       </section>
     </>

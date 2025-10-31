@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 export default function CTA() {
   return (
     <div
-      className="w-full flex flex-col justify-center gap-6 py-30 mb-30 relative bg-fixed bg-center bg-cover"
+      className="w-full flex flex-col justify-center gap-6 py-30 mb-30 relative bg-scroll md:bg-fixed bg-center bg-cover"
       style={{
         backgroundImage: "url('https://images.unsplash.com/photo-1565891741441-64926e441838?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1471')"
       }}
