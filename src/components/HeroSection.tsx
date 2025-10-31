@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { ArrowRight, Truck } from "lucide-react"
 
 export default function HeroSection() {
@@ -27,19 +28,20 @@ export default function HeroSection() {
             <p className="text-white/90 text-sm md:text-lg  mb-8 max-w-2xl" data-aos="fade-up" data-aos-delay="100">
               Ofrecemos soluciones integrales de logística y transporte, asegurando entregas seguras, puntuales y eficientes para que su mercancía llegue a destino sin contratiempos.
             </p>
-
-            <button 
-              className="bg-[#f68b21] text-white px-8 py-4 text-lg font-semibold flex items-center gap-3 overflow-hidden transition-all duration-700 ease-in-out uppercase group cursor-pointer" 
-              data-aos="fade-up" 
-              data-aos-delay="200">
-                <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
-                <span
-                  className="relative z-10 flex items-center gap-3 group-hover:text-[#003d4d] transition-colors duration-500"
-                >
-                  Contactanos
-                  <ArrowRight className="w-5 h-5 " />
-                </span>
-            </button>
+            <Link to="/contacto">
+              <button 
+                className="bg-[#f68b21] text-white px-8 py-4 text-lg font-semibold flex items-center gap-3 overflow-hidden transition-all duration-700 ease-in-out uppercase group cursor-pointer" 
+                data-aos="fade-up" 
+                data-aos-delay="200">
+                  <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+                  <span
+                    className="relative z-10 flex items-center gap-3 group-hover:text-[#003d4d] transition-colors duration-500"
+                  >
+                    Contactanos
+                    <ArrowRight className="w-5 h-5 " />
+                  </span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

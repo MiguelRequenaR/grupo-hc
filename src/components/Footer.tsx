@@ -1,5 +1,6 @@
 import logoP from "../assets/logoP.png"
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react"
+import { Link } from "react-router-dom"
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
       }}
     >
       <div className="absolute inset-0 bg-black/80 pointer-events-none z-0"></div>
-      <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 px-6">
+      <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 px-6">
         <div data-aos="fade-up">
           <div className="flex items-center gap-3">
             <img src={logoP} alt="logo" className="w-28 object-contain" />
@@ -48,13 +49,24 @@ export default function Footer() {
             <li>Seguros de carga</li>
           </ul>
         </div>
+
+        <div data-aos="fade-up" data-aos-delay="200">
+          <h3 className="font-bold text-xl mb-4">Páginas</h3>
+          <ul className="space-y-2 text-gray-200 text-sm md:text-[16px]">
+            <li className="hover:text-[#f68b21] transition-all duration-500 ease-in-out"><Link to="/">Inicio</Link></li>
+            <li className="hover:text-[#f68b21] transition-all duration-500 ease-in-out"><Link to="/nosotros">Nosotros</Link></li>
+            <li className="hover:text-[#f68b21] transition-all duration-500 ease-in-out"><Link to="/servicios">Servicios</Link></li>
+            <li className="hover:text-[#f68b21] transition-all duration-500 ease-in-out"><Link to="/contacto">Contacto</Link></li>
+          </ul>
+        </div>
+
         <div data-aos="fade-up" data-aos-delay="200">
           <h3 className="font-bold text-xl mb-4">Contacto</h3>
           <ul className="space-y-2 text-gray-200 text-sm md:text-[16px]">
-            <li>Email: contacto@empresa.com</li>
-            <li>Teléfono: +34 123 456 789</li>
-            <li>C/ Falsa, 123 - Madrid</li>
-            <li>Lun-Vie: 9h - 18h</li>
+            <li>Email: info@grupo-hc.com</li>
+            <li>Teléfono: (+51) 987 654 321</li>
+            <li>Av. Real Huancayo, PE</li>
+            <li>Lun-Vie: 8:00 - 18:00</li>
           </ul>
         </div>
       </div>

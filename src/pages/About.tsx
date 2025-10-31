@@ -1,6 +1,7 @@
 import { Truck, ArrowRight, Phone, ListCheck } from "lucide-react"
 import ServiceSection from "../components/ServiceSection"
 import TeamSection from "../components/TeamSection"
+import { Link } from "react-router-dom"
 
 export default function About() {
   return (
@@ -73,18 +74,20 @@ export default function About() {
             </div>
 
             <div className="flex flex-col md:flex-row items-center gap-10">
-              <button
-                className="relative bg-[#f68b21] text-white px-4 py-2 text-sm font-semibold flex items-center gap-3 overflow-hidden border border-transparent transition-all duration-500 ease-in-out group cursor-pointer"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+              <Link to="/contacto">
+                <button
+                  className="relative bg-[#f68b21] text-white px-4 py-2 text-sm font-semibold flex items-center gap-3 overflow-hidden border border-transparent transition-all duration-500 ease-in-out group cursor-pointer"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
 
-                <span className="relative z-10 flex items-center gap-3 group-hover:text-[#f68b21] transition-colors duration-500 uppercase">
-                  Contactanos
-                  <ArrowRight className="w-5 h-5 transition-transform duration-500 group-hover:translate-x-1" />
-                </span>
-              </button>
+                  <span className="relative z-10 flex items-center gap-3 group-hover:text-[#f68b21] transition-colors duration-500 uppercase">
+                    Contactanos
+                    <ArrowRight className="w-5 h-5 transition-transform duration-500 group-hover:translate-x-1" />
+                  </span>
+                </button>
+              </Link>
               <div className="flex items-center gap-3" data-aos="fade-up" data-aos-delay="400">
                 <div className="bg-[#fce6ce] text-[#f68b21] p-3 rounded-full">
                   <Phone className="w-3 h-3" />
@@ -132,7 +135,8 @@ export default function About() {
               Reserva una cita con nosotros para que podamos atenderte y resolver tus dudas. Llámanos o envíanos un mensaje. Estamos para ayudarte.
             </p>
             <div className="flex flex-col md:flex-row items-center gap-4 mt-10 w-full">
-              <button
+              <Link to="/contacto"> 
+              <button  
                 className="relative bg-[#f68b21] text-white px-6 md:px-8 py-3 text-base md:text-lg font-semibold flex items-center gap-3 overflow-hidden transition-all duration-500 ease-in-out uppercase group cursor-pointer"
                 data-aos="zoom-in"
               >
@@ -142,16 +146,19 @@ export default function About() {
                   <ArrowRight className="w-5 h-5" />
                 </span>
               </button>
-              <button
-                className="relative bg-[#003d4d] text-white px-6 md:px-8 py-3 text-base md:text-lg font-semibold flex items-center gap-3 overflow-hidden transition-all duration-500 ease-in-out uppercase group cursor-pointer"
-                data-aos="zoom-in"
-              >
-                <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
-                <span className="relative z-10 flex items-center gap-3 group-hover:text-[#003d4d] transition-colors duration-500 uppercase">
-                  Más detalles
-                  <ArrowRight className="w-5 h-5" />
-                </span>
-              </button>
+              </Link>
+              <Link to="/servicios">
+                <button
+                  className="relative bg-[#003d4d] text-white px-6 md:px-8 py-3 text-base md:text-lg font-semibold flex items-center gap-3 overflow-hidden transition-all duration-500 ease-in-out uppercase group cursor-pointer"
+                  data-aos="zoom-in"
+                >
+                  <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+                  <span className="relative z-10 flex items-center gap-3 group-hover:text-[#003d4d] transition-colors duration-500 uppercase">
+                    Más detalles
+                    <ArrowRight className="w-5 h-5" />
+                  </span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>

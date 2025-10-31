@@ -34,8 +34,8 @@ export default function Contact() {
             <h2 className="text-3xl font-bold text-white">Información de contacto</h2>
             <div className="bg-[#f68b21] h-0.5 w-full my-5"></div>
             <div className="space-y-10 my-auto">
-              <div className="bg-white p-4 flex items-center gap-5">
-                <div className="bg-[#003d4d] p-3">
+              <div className="bg-white p-4 flex items-center gap-5 group cursor-pointer">
+                <div className="bg-[#003d4d] p-3 group-hover:bg-[#f68b21] transition-all duration-500 ease-in-out">
                   <MapPin className="w-10 h-10 text-white" />
                 </div>
                 <div className="flex flex-col space-y-1">
@@ -43,8 +43,8 @@ export default function Contact() {
                   <span>Av. Real Huancayo, PE</span>
                 </div>
               </div>
-              <div className="bg-white p-4 flex items-center gap-5">
-                <div className="bg-[#003d4d] p-3">
+              <div className="bg-white p-4 flex items-center gap-5 group cursor-pointer">
+                <div className="bg-[#003d4d] p-3 group-hover:bg-[#f68b21] transition-all duration-500 ease-in-out">
                   <Phone className="w-10 h-10 text-white" />
                 </div>
                 <div className="flex flex-col space-y-1">
@@ -52,8 +52,8 @@ export default function Contact() {
                   <span>(+51) 987 654 321</span>
                 </div>
               </div>
-              <div className="bg-white p-4 flex items-center gap-5">
-                <div className="bg-[#003d4d] p-3">
+              <div className="bg-white p-4 flex items-center gap-5 group cursor-pointer">
+                <div className="bg-[#003d4d] p-3 group-hover:bg-[#f68b21] transition-all duration-500 ease-in-out">
                   <Mail className="w-10 h-10 text-white" />
                 </div>
                 <div className="flex flex-col space-y-1">

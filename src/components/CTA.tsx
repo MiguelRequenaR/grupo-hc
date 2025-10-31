@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 export default function CTA() {
@@ -9,24 +10,28 @@ export default function CTA() {
       }}
     >
       <div className="absolute inset-0 bg-black/50"></div>
-      
+
       <div className="max-w-3xl mx-auto relative z-10">
         <h2 className="text-2xl md:text-4xl text-center font-bold text-white" data-aos="fade-up">¿Estás buscando el mejor servicio de transporte y logística?</h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-10">
-          <button className="relative bg-[#f68b21] text-white px-8 py-3 text-lg font-semibold flex items-center gap-3 overflow-hidden transition-all duration-500 ease-in-out uppercase group cursor-pointer" data-aos="zoom-in" data-aos-delay="100">
-            <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
-            <span className="relative z-10 flex items-center gap-3 group-hover:text-[#f68b21] transition-colors duration-500 uppercase">
-              Contactanos
-              <ArrowRight className="w-5 h-5 " />
-            </span>
-          </button>
-          <button className="relative bg-[#003d4d] text-white px-8 py-3 text-lg font-semibold flex items-center gap-3 overflow-hidden transition-all duration-500 ease-in-out uppercase group cursor-pointer" data-aos="zoom-in" data-aos-delay="200">
-            <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
-            <span className="relative z-10 flex items-center gap-3 group-hover:text-[#003d4d] transition-colors duration-500 uppercase">
-              Más detalles
-              <ArrowRight className="w-5 h-5 " />
-            </span>
-          </button>
+          <Link to="/contacto">
+            <button className="relative bg-[#f68b21] text-white px-8 py-3 text-lg font-semibold flex items-center gap-3 overflow-hidden transition-all duration-500 ease-in-out uppercase group cursor-pointer" data-aos="zoom-in" data-aos-delay="100">
+              <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+              <span className="relative z-10 flex items-center gap-3 group-hover:text-[#f68b21] transition-colors duration-500 uppercase">
+                Contactanos
+                <ArrowRight className="w-5 h-5 " />
+              </span>
+            </button>
+          </Link>
+          <Link to="/servicios">
+            <button className="relative bg-[#003d4d] text-white px-8 py-3 text-lg font-semibold flex items-center gap-3 overflow-hidden transition-all duration-500 ease-in-out uppercase group cursor-pointer" data-aos="zoom-in" data-aos-delay="200">
+              <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+              <span className="relative z-10 flex items-center gap-3 group-hover:text-[#003d4d] transition-colors duration-500 uppercase">
+                Más detalles
+                <ArrowRight className="w-5 h-5 " />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row bottom-[-200px] bg-white relative z-20 shadow-lg" data-aos="fade-up">
@@ -46,9 +51,9 @@ export default function CTA() {
           </div>
         </div>
         <div className="w-full md:w-1/3 h-48 md:h-auto">
-          <img 
-            src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470" 
-            alt="cta" 
+          <img
+            src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470"
+            alt="cta"
             className="w-full h-full object-cover rounded-b-md md:rounded-none md:rounded-r-md"
           />
         </div>

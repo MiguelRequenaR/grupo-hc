@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { ArrowRight, Truck, Phone } from "lucide-react"
 
 export default function AboutSection() {
@@ -25,29 +26,33 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row items-center gap-10">
+          <Link to="/nosotros">
+            <button
+              className="relative bg-[#f68b21] text-white px-4 py-2 text-sm font-semibold flex items-center gap-3 overflow-hidden border border-transparent transition-all duration-500 ease-in-out group cursor-pointer"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
 
-          <button
-            className="relative bg-[#f68b21] text-white px-4 py-2 text-sm font-semibold flex items-center gap-3 overflow-hidden border border-transparent transition-all duration-500 ease-in-out group cursor-pointer"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+              <span className="relative z-10 flex items-center gap-3 group-hover:text-[#f68b21] transition-colors duration-500 uppercase">
+                Explorar más
+                <ArrowRight className="w-5 h-5 transition-transform duration-500 group-hover:translate-x-1" />
+              </span>
+            </button>
+          </Link>
 
-            <span className="relative z-10 flex items-center gap-3 group-hover:text-[#f68b21] transition-colors duration-500 uppercase">
-              Explorar más
-              <ArrowRight className="w-5 h-5 transition-transform duration-500 group-hover:translate-x-1" />
-            </span>
-          </button>
-
-
-          <div className="flex items-center gap-3" data-aos="fade-up" data-aos-delay="400">
-            <div className="bg-[#fce6ce] text-[#f68b21] p-3 rounded-full">
-              <Phone className="w-3 h-3" />
-            </div>
-            <div>
-              <h4 className="text-sm font-bold text-[#f68b21]">Contactanos</h4>
-              <p className="text-sm text-gray-500">+56 (201) 555-0124</p>
-            </div>
+          <div className="" data-aos="fade-up" data-aos-delay="400">
+            <a href="https://wa.me/51987654321?text=Hola%20más%20información">
+              <div className="flex items-center gap-3">
+                <div className="bg-[#fce6ce] text-[#f68b21] p-3 rounded-full">
+                  <Phone className="w-3 h-3" />
+                </div>
+                <div>
+                  <h4 className="text-sm font-bold text-[#f68b21]">Contactanos</h4>
+                  <p className="text-sm text-gray-500">(+51) 987 654 321</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>

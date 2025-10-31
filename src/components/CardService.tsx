@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 export default function CardService() {
 
@@ -64,7 +65,9 @@ export default function CardService() {
 
       <p className="text-center text-white text-sm pt-20 pb-10" data-aos="fade-up" data-aos-delay="100">
         Nuestra lista de servicios no termina aquí. Descubra cómo podemos ayudarle a usted y a su empresa.
-        <span className="text-[#f68b21] font-bold cursor-pointer"> Más servicios.</span>
+        <Link to="/servicios">
+          <span className="text-[#f68b21] font-bold cursor-pointer"> Más servicios.</span>
+        </Link>
       </p>
     </div>
   )
