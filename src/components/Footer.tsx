@@ -64,7 +64,7 @@ export default function Footer() {
           <h3 className="font-bold text-xl mb-4">Contacto</h3>
           <ul className="space-y-2 text-gray-200 text-sm md:text-[16px]">
             <li>Email: info@grupo-hc.com</li>
-            <li>Teléfono: (+51) 987 654 321</li>
+            <li>Teléfono: (+51) 933 728 244</li>
             <li>Av. Real Huancayo, PE</li>
             <li>Lun-Vie: 8:00 - 18:00</li>
           </ul>
@@ -73,8 +73,13 @@ export default function Footer() {
       <div className="w-[80%] mx-auto my-10 relative z-10">
         <div className="border-t-2 border-dashed border-white"></div>
       </div>
-      <div className="relative z-10 mt-12 text-center text-gray-200 text-sm opacity-75">
+      <div className="flex flex-col relative z-10 mt-12 text-center text-gray-200 text-sm opacity-75">
         © {new Date().getFullYear()} Grupo HC. Todos los derechos reservados.
+        <span>Desarrollado por <a href="https://grobles.netlify.app/" target="_blank" className="text-[#f68b21] hover:text-white transition-all duration-500 ease-in-out font-bold">Grobles Studio.</a></span>
+      </div>
+      <div>
+        <span>Desarrollado por <a href="https://grobles.netlify.app/" target="_blank" className="text-[#f68b21] hover:text-white transition-all duration-500 ease-in-out font-bold">Grobles Studio.</a></span>
+
       </div>
     </footer>
   )

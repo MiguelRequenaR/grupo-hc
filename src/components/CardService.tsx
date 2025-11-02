@@ -49,11 +49,11 @@ export default function CardService() {
               <div key={service.id} className="bg-white p-10 relative group overflow-hidden cursor-pointer">
                 <div className="absolute inset-0 bg-[#f68b21] -translate-y-full group-hover:translate-y-0 transition-all duration-500 ease-in-out z-0"></div>
                 <div className="relative z-10 space-y-4">
-                  <div className="bg-[#003d4d] p-3 w-fit ">
+                  <div className="bg-[#003d4d] p-3 w-fit">
                     <img src={service.icon} alt="icon" className="w-10 h-10" />
                   </div>
-                  <h2 className="text-[#004364] font-bold text-xl md:text-2xl group-hover:text-[#003d4d] transition-colors duration-500">{service.title}</h2>
-                  <p className="text-gray-500 text-sm md:text-lg group-hover:text-[#004364] transition-colors duration-500">{service.description}</p>
+                  <h2 className="text-[#004364] font-bold text-xl md:text-2xl group-hover:text-white transition-colors duration-500">{service.title}</h2>
+                  <p className="text-gray-500 text-sm md:text-lg group-hover:text-white transition-colors duration-500">{service.description}</p>
                   <div className="bg-[#f68b21] h-0.5 w-[40%] mt-5 group-hover:w-full transition-all duration-500 ease-in-out group-hover:bg-white"></div>
                 </div>
               </div>
@@ -61,7 +61,6 @@ export default function CardService() {
           </div>
         </div>
       </div>
-
 
       <p className="text-center text-white text-sm pt-20 pb-10" data-aos="fade-up" data-aos-delay="100">
         Nuestra lista de servicios no termina aquí. Descubra cómo podemos ayudarle a usted y a su empresa.

@@ -21,27 +21,43 @@ export default function HeroSection() {
               <span className="text-white text-sm md:text-lg">Nos especializamos en el transporte</span>
             </div>
 
-            <h1 className="text-white text-4xl md:text-7xl font-bold mb-6" data-aos="fade-up">
+            <h1 className="text-white text-3xl md:text-7xl font-bold mb-6" data-aos="fade-up">
               Experimente la mejor logística & transporte
             </h1>
 
             <p className="text-white/90 text-sm md:text-lg  mb-8 max-w-2xl" data-aos="fade-up" data-aos-delay="100">
               Ofrecemos soluciones integrales de logística y transporte, asegurando entregas seguras, puntuales y eficientes para que su mercancía llegue a destino sin contratiempos.
             </p>
-            <Link to="/contacto">
-              <button 
-                className="bg-[#f68b21] text-white px-8 py-4 text-lg font-semibold flex items-center gap-3 overflow-hidden transition-all duration-700 ease-in-out uppercase group cursor-pointer" 
-                data-aos="fade-up" 
-                data-aos-delay="200">
-                  <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
-                  <span
-                    className="relative z-10 flex items-center gap-3 group-hover:text-[#003d4d] transition-colors duration-500"
-                  >
-                    Contactanos
-                    <ArrowRight className="w-5 h-5 " />
-                  </span>
-              </button>
-            </Link>
+            <div className="flex flex-col md:flex-row items-center gap-5">
+              <Link to="/contacto">
+                <button 
+                  className="bg-[#f68b21] text-white px-8 py-2 md:py-4 text-lg font-semibold flex items-center gap-3 overflow-hidden transition-all duration-700 ease-in-out uppercase group cursor-pointer" 
+                  data-aos="fade-up" 
+                  data-aos-delay="200">
+                    <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+                    <span
+                      className="relative z-10 flex items-center gap-3 group-hover:text-[#003d4d] transition-colors duration-500 text-sm md:text-lg"
+                    >
+                      Contactanos
+                      <ArrowRight className="w-5 h-5 " />
+                    </span>
+                </button>
+              </Link>
+              <Link to="/servicios">
+                <button 
+                  className="bg-[#003d4d] text-white px-8 py-2 md:py-4 text-lg font-semibold flex items-center gap-3 overflow-hidden transition-all duration-700 ease-in-out uppercase group cursor-pointer" 
+                  data-aos="fade-up" 
+                  data-aos-delay="200">
+                    <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+                    <span
+                      className="relative z-10 flex items-center gap-3 group-hover:text-[#003d4d] transition-colors duration-500 text-sm md:text-lg"
+                    >
+                      Explorar más
+                      <ArrowRight className="w-5 h-5 " />
+                    </span>
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
