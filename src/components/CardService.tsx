@@ -53,7 +53,7 @@ export default function CardService() {
                     <img src={service.icon} alt="icon" className="w-10 h-10" />
                   </div>
                   <h2 className="text-[#004364] font-bold text-xl md:text-2xl group-hover:text-white transition-colors duration-500">{service.title}</h2>
-                  <p className="text-gray-500 text-sm md:text-lg group-hover:text-white transition-colors duration-500">{service.description}</p>
+                  <p className="text-gray-500 text-sm md:text-[17px] group-hover:text-white transition-colors duration-500">{service.description}</p>
                   <div className="bg-[#f68b21] h-0.5 w-[40%] mt-5 group-hover:w-full transition-all duration-500 ease-in-out group-hover:bg-white"></div>
                 </div>
               </div>

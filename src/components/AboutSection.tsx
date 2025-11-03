@@ -7,21 +7,21 @@ export default function AboutSection() {
       <div data-aos="fade-right">
         <img src="https://images.unsplash.com/photo-1565891741441-64926e441838?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1471" alt="about" className="w-full h-full object-cover" />
       </div>
-      <div className="space-y-6">
-        <div className="flex items-center gap-2" data-aos="fade-up">
+      <div className="space-y-5">
+        <div className="flex items-center gap-2 justify-center md:justify-start" data-aos="fade-up">
           <Truck className="w-6 h-6 text-[#f68b21]" />
-          <h2 className="text-lg font-bold text-[#f68b21]">Sobre nuestra compañia</h2>
+          <h2 className="font-semibold text-[#f68b21]">Sobre nuestra compañia</h2>
         </div>
-        <h2 className="text-3xl font-bold text-[#003d4d]" data-aos="fade-up">Soluciones logísticas que ofrecen excelencia</h2>
-        <p className="text-sm md:text-lg" data-aos="fade-up" data-aos-delay="100">
-          Ofrecemos soluciones logísticas de alta calidad, adaptadas a cada cliente.
+        <h2 className="text-3xl font-bold text-[#003d4d] text-center md:text-left" data-aos="fade-up">Soluciones logísticas que ofrecen excelencia</h2>
+        <p className="text-sm md:text-lg text-[#003d4d]" data-aos="fade-up" data-aos-delay="100">
+          Ofrecemos soluciones logísticas de alta calidad, adaptadas a cada cliente. Contactanos para obtener más información.
         </p>
         <div className="flex items-center w-fit gap-5" data-aos="fade-up" data-aos-delay="200">
-          <div className="flex flex-col md:flex-row items-center gap-5 p-5">
-            <div className="bg-[#f68b21] w-2 h-20 hidden md:block"></div>
+          <div className="flex items-center gap-5 p-5">
+            <div className="bg-[#f68b21] w-1 h-20 hidden md:block"></div>
             <div>
-              <h3 className="text-base md:text-xl font-bold text-[#003d4d]">Seguimiento en tiempo-real</h3>
-              <p className="text-sm md:text-lg">Mantenemos un seguimiento en tiempo real de la mercancía.</p>
+              <h3 className="text-base md:text-xl font-bold text-[#003d4d]">Seguridad Garantizada</h3>
+              <p className="text-sm md:text-[17px] text-[#003d4d]">Tu carga está protegida en todo momento, asegurando entregas seguras y confiables.</p>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ export default function AboutSection() {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-[#f68b21]">Contactanos</h4>
-                  <p className="text-sm text-gray-500">(+51) 987 654 321</p>
+                  <p className="text-sm font-semibold text-[#003d4d]">(+51) 933 728 244</p>
                 </div>
               </div>
             </a>

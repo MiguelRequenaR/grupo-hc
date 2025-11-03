@@ -1,5 +1,5 @@
-import ServiceSection from "../components/ServiceSection"
-import ContactForm from "../components/ContactForm"
+import ServiceSection from "@/components/ServiceSection"
+import ContactForm from "@/components/ContactForm"
 
 export default function Service() {
   return (

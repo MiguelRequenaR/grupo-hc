@@ -45,7 +45,7 @@ export default function Testimony() {
             <div className="relative z-20">
               <div className="bg-[#f68b21] h-[2px] w-[80%] mx-auto my-5"></div>
               <div>
-                <p className="text-lg text-[#003d4d] group-hover:text-white transition-colors duration-500">
+                <p className="text-[17px] text-[#003d4d] group-hover:text-white transition-colors duration-500">
                   {testimony.testimony}
                 </p>
               </div>

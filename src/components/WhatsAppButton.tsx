@@ -71,14 +71,14 @@ export default function WhatsAppButton() {
                 key="close"
                 className="inline-block animate-[spin_0.4s_ease-in-out] animate-fade-in"
               >
-                <XIcon className="w-10 h-10" />
+                <XIcon className="w-8 h-8" />
               </span>
             ) : (
               <span
                 key="logo"
                 className="inline-block animate-[spin_0.4s_ease-in-out] animate-fade-in"
               >
-                <img src="https://img.icons8.com/?size=48&id=16713&format=png" alt="logo" className="w-10 h-10" />
+                <img src="https://img.icons8.com/?size=48&id=16713&format=png" alt="logo" className="w-8 h-8" />
               </span>
             )
           }

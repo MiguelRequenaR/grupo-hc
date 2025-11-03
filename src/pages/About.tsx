@@ -1,6 +1,6 @@
 import { Truck, ArrowRight, Phone, ListCheck } from "lucide-react"
-import ServiceSection from "../components/ServiceSection"
-import TeamSection from "../components/TeamSection"
+import ServiceSection from "@/components/ServiceSection"
+import TeamSection from "@/components/TeamSection"
 import { Link } from "react-router-dom"
 
 export default function About() {
