@@ -3,7 +3,7 @@ import { ArrowRight, Truck } from "lucide-react"
 
 export default function HeroSection() {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <main className="relative w-full h-screen overflow-hidden">
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470"
@@ -61,6 +61,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   )
 }

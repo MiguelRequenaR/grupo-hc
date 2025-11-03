@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { ArrowRight, Truck, Phone } from "lucide-react"
 
-export default function AboutSection() {
+export default function AboutHome() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto p-4 md:p-20 gap-10">
       <div data-aos="fade-right">

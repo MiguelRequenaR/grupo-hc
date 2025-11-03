@@ -21,9 +21,9 @@ const team = [
   }
 ]
 
-export default function TeamSection() {
+export default function AboutTeamSection() {
   return (
-    <>
+    <main>
       <div className="flex flex-col items-center justify-center" data-aos="fade-up">
         <span className="text-center text-[#f68b21] font-semibold">Nuestro Equipo</span>
         <h2 className="text-3xl text-center font-bold text-[#003d4d] mt-2">Las mentes brillantes detrás</h2>
@@ -50,6 +50,6 @@ export default function TeamSection() {
           }
         </div>
       </div>
-    </>
+    </main>
   )
 }
