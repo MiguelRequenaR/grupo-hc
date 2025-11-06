@@ -12,29 +12,29 @@ export default function AboutHome() {
           <Truck className="w-6 h-6 text-[#f68b21]" />
           <h2 className="font-semibold text-[#f68b21]">Sobre nuestra compañia</h2>
         </div>
-        <h2 className="text-3xl font-bold text-[#003d4d] text-center md:text-left" data-aos="fade-up">Soluciones logísticas que ofrecen excelencia</h2>
-        <p className="text-sm md:text-lg text-[#003d4d]" data-aos="fade-up" data-aos-delay="100">
+        <h2 className="text-2xl font-bold text-[#003d4d] text-center md:text-left" data-aos="fade-up">Soluciones logísticas que ofrecen excelencia</h2>
+        <p className="text-sm md:text-[17px] text-[#003d4d]" data-aos="fade-up" data-aos-delay="100">
           Ofrecemos soluciones logísticas de alta calidad, adaptadas a cada cliente. Contactanos para obtener más información.
         </p>
-        <div className="flex items-center w-fit gap-5" data-aos="fade-up" data-aos-delay="200">
-          <div className="flex items-center gap-5 p-5">
-            <div className="bg-[#f68b21] w-1 h-20 hidden md:block"></div>
+        <div className="flex items-center w-fit gap-5 bg-[#f5f4f9]" data-aos="fade-up" data-aos-delay="200">
+          <div className="flex items-center gap-5 pr-5">
+            <div className="bg-[#f68b21] w-1 h-28 hidden md:block"></div>
             <div>
-              <h3 className="text-base md:text-xl font-bold text-[#003d4d]">Seguridad Garantizada</h3>
-              <p className="text-sm md:text-[17px] text-[#003d4d]">Tu carga está protegida en todo momento, asegurando entregas seguras y confiables.</p>
+              <h3 className="text-base md:text-[17px] font-bold text-[#003d4d]">Seguridad Garantizada</h3>
+              <p className="text-sm md:text-[15px] text-[#003d4d]">Tu carga está protegida en todo momento, asegurando entregas seguras y confiables.</p>
             </div>
           </div>
         </div>
         <div className="flex flex-col md:flex-row items-center gap-10">
           <Link to="/nosotros">
             <button
-              className="relative bg-[#f68b21] text-white px-4 py-2 text-sm font-semibold flex items-center gap-3 overflow-hidden border border-transparent transition-all duration-500 ease-in-out group cursor-pointer"
+              className="relative bg-[#f68b21] text-white px-5 py-4 text-sm font-semibold flex items-center gap-3 overflow-hidden transition-all duration-500 ease-in-out group cursor-pointer"
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+              <span className="absolute inset-0 bg-[#003d4d] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
 
-              <span className="relative z-10 flex items-center gap-3 group-hover:text-[#f68b21] transition-colors duration-500 uppercase">
+              <span className="relative z-10 flex items-center gap-3 group-hover:text-white transition-colors duration-500 uppercase">
                 Explorar más
                 <ArrowRight className="w-5 h-5 transition-transform duration-500 group-hover:translate-x-1" />
               </span>

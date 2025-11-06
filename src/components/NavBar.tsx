@@ -107,7 +107,7 @@ export default function NavBar() {
               </div>
               <div className="flex flex-col">
                 <span className="text-sm font-semibold">Contacto</span>
-                <span className="text-lg font-bold">(+51) 933 728 244</span>
+                <span className="text-lg font-bold">(+51) 999 888 777</span>
               </div>
             </div>
           </div>

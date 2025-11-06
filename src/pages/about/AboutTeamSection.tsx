@@ -3,7 +3,7 @@ import { Instagram, Twitter, Linkedin } from "lucide-react"
 const team = [
   {
     id: 1,
-    name: "Jheison Huaynate",
+    name: "John Doe",
     job: "Gerente General",
     avatar: "https://html.sthemeit.com/logistcwr-demo/assets/images/team/team4.png",
     instagram: "https://www.instagram.com/jheisonhuaynate",
@@ -12,7 +12,7 @@ const team = [
   },
   {
     id: 2,
-    name: "Angel Huaynate",
+    name: "Juan Perez",
     job: "SubGerente General",
     avatar: "https://html.sthemeit.com/logistcwr-demo/assets/images/team/team4.png",
     instagram: "https://www.instagram.com/angelhuaynate",

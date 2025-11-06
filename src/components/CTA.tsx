@@ -36,19 +36,22 @@ export default function CTA() {
       </div>
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row bottom-[-200px] bg-white relative z-20 shadow-lg" data-aos="fade-up">
         <div className="w-full md:w-2/3 p-6 md:p-10 space-y-5">
-          <h3 className="text-2xl font-bold text-[#003d4d]">¿Por qué elegirnos?</h3>
+          <h3 className="text-2xl font-bold text-[#003d4d]">Servicios que protegen tu negocio</h3>
           <p className="text-sm md:text-[16px] text-gray-500">
-            Somos una empresa dedicada a ofrecer soluciones logísticas de alta calidad para nuestros clientes. Contamos con un equipo de profesionales expertos en el rubro que nos permite ofrecer soluciones adaptadas a las necesidades de cada cliente.
+            ¿No estas seguro de que servicio necesitas? Contactanos y te asesoraremos. Te acompañamos en cada etapa del servicio, estamos listos para colaborar contigo.
           </p>
-          <div className="flex flex-row items-start sm:items-center gap-3">
-            <div className="bg-[#f68b21] w-1 h-20"></div>
-            <div>
-              <h4 className="text-sm md:text-[16px] font-bold text-[#f68b21]">Experiencia y Expertise</h4>
-              <p className="text-sm md:text-[16px] text-gray-500">
-                Nuestra experiencia y expertise en el rubro nos permite ofrecer soluciones adaptadas a las necesidades de cada cliente.
-              </p>
-            </div>
+          <div className="flex w-full">
+            <input
+              type="text"
+              placeholder="Escribe tu consulta aquí..."
+              className="flex-1 p-2 rounded-l-md border border-gray-100 outline-none"
+              style={{ borderRight: "none" }}
+            />
+            <button className="bg-[#f68b21] text-white px-4 py-2 rounded-r-md font-bold text-lg uppercase rounded-l-none border-none outline-none cursor-pointer hover:bg-[#003d4d] transition-all duration-500 ease-in-out">
+              Enviar Mensaje
+            </button>
           </div>
+
         </div>
         <div className="w-full md:w-1/3 h-48 md:h-auto">
           <img

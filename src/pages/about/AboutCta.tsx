@@ -8,7 +8,7 @@ export default function AboutCta() {
         className="w-full flex flex-col justify-center gap-6 relative bg-scroll md:bg-fixed bg-center bg-cover h-[80vh]"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171')",
+            "url('https://images.unsplash.com/photo-1586206670130-4c6d8e646c9a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1473')",
         }}
       >
         <div className="absolute inset-0 bg-black/50"></div>

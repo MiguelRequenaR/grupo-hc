@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
           </div>
           <p className="text-gray-300 text-sm md:text-[16px]">
-            Somos una empresa dedicada a ofrecer soluciones logísticas de alta calidad para nuestros clientes.
+            Empresa dedicada a ofrecer soluciones logísticas de alta calidad.
           </p>
           <div>
             <div className="flex items-center gap-3">
@@ -64,7 +64,7 @@ export default function Footer() {
           <h3 className="font-bold text-xl mb-4">Contacto</h3>
           <ul className="space-y-2 text-gray-200 text-sm md:text-[16px]">
             <li>Email: info@grupo-hc.com</li>
-            <li>Teléfono: (+51) 933 728 244</li>
+            <li>Teléfono: (+51) 999 888 777</li>
             <li>Av. Real Huancayo, PE</li>
             <li>Lun-Vie: 8:00 - 18:00</li>
           </ul>

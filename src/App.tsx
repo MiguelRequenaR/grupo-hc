@@ -4,6 +4,7 @@ import MainLayout from '@/layout/MainLayout'
 import Home from '@/pages/home/Home'
 import About from '@/pages/about/About'
 import Service from '@/pages/Service/Service'
+import ServiceDetail from '@/pages/Service/ServiceDetail'
 import Contact from '@/pages/contact/Contact'
 import ScrollToTop from '@/utils/ScrollToTop'
 import AOS from 'aos'
@@ -28,6 +29,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="nosotros" element={<About />} />
           <Route path="servicios" element={<Service />} />
+          <Route path="servicios/:slug" element={<ServiceDetail />} />
           <Route path="contacto" element={<Contact />} />
         </Route>
       </Routes>

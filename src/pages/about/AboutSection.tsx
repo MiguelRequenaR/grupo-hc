@@ -26,25 +26,25 @@ export default function AboutSection() {
             <Truck className="w-6 h-6 text-[#f68b21]" />
             <h2 className="text-lg font-bold text-[#f68b21]">Sobre nuestra compañia</h2>
           </div>
-          <h2 className="text-3xl font-bold text-[#003d4d]" data-aos="fade-up">Soluciones logísticas que ofrecen excelencia</h2>
-          <p className="text-sm md:text-lg" data-aos="fade-up" data-aos-delay="100">
+          <h2 className="text-2xl font-bold text-[#003d4d]" data-aos="fade-up">Soluciones logísticas que ofrecen excelencia</h2>
+          <p className="text-sm md:text-[16px] text-[#003d4d]" data-aos="fade-up" data-aos-delay="100">
             Somos una empresa con más de 10 años de experiencia en el rubro logístico, brindando soluciones integrales de logística y transporte, asegurando entregas seguras, puntuales y eficientes para que su mercancía llegue a destino sin contratiempos.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10" data-aos="fade-up">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 text-sm md:text-[16px] text-[#003d4d]">
               <ListCheck className="w-6 h-6 text-[#f68b21]" />
               <span>Servicios Nacionales</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 text-sm md:text-[16px] text-[#003d4d]">
               <ListCheck className="w-6 h-6 text-[#f68b21]" />
               <span>Servicios Locales</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 text-sm md:text-[16px] text-[#003d4d]">
               <ListCheck className="w-6 h-6 text-[#f68b21]" />
               <span>Servicios de Carga y Descarga</span>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 text-sm md:text-[16px] text-[#003d4d]">
               <ListCheck className="w-6 h-6 text-[#f68b21]" />
               <span>Entregas puntuales</span>
             </div>
@@ -53,13 +53,13 @@ export default function AboutSection() {
           <div className="flex flex-col md:flex-row items-center gap-10">
             <Link to="/contacto">
               <button
-                className="relative bg-[#f68b21] text-white px-4 py-2 text-sm font-semibold flex items-center gap-3 overflow-hidden border border-transparent transition-all duration-500 ease-in-out group cursor-pointer"
+                className="relative bg-[#f68b21] text-white px-5 py-4 text-sm font-semibold flex items-center gap-3 overflow-hidden transition-all duration-500 ease-in-out group cursor-pointer"
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                <span className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+                <span className="absolute inset-0 bg-[#003d4d] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
 
-                <span className="relative z-10 flex items-center gap-3 group-hover:text-[#f68b21] transition-colors duration-500 uppercase">
+                <span className="relative z-10 flex items-center gap-3 group-hover:text-white transition-colors duration-500 uppercase">
                   Contactanos
                   <ArrowRight className="w-5 h-5 transition-transform duration-500 group-hover:translate-x-1" />
                 </span>
