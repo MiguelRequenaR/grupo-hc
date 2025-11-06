@@ -130,7 +130,7 @@ export default function NavBar() {
             <li className="px-6 py-4 text-white border-b border-white/10">
               <div className="flex items-center gap-3 mb-2">
                 <Phone className="w-5 h-5" />
-                <span className="font-semibold">(+51) 987 654 321</span>
+                <span className="font-semibold">(+51) 999 888 777</span>
               </div>
             </li>
             <li className="px-6 py-4">

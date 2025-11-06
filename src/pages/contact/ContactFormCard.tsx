@@ -28,7 +28,7 @@ export default function ContactFormCard() {
               </div>
               <div className="flex flex-col space-y-1">
                 <span className="text-lg font-bold text-[#003d4d]">Número de contacto:</span>
-                <span className="text-[16px] text-[#003d4d]">(+51) 987 654 321</span>
+                <span className="text-[16px] text-[#003d4d]">(+51) 999 888 777</span>
               </div>
             </div>
             <div className="bg-white p-4 flex items-center gap-5 group cursor-pointer">

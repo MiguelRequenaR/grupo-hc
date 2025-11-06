@@ -48,7 +48,7 @@ export default function CTA() {
               style={{ borderRight: "none" }}
             />
             <button className="bg-[#f68b21] text-white px-4 py-2 rounded-r-md font-bold text-lg uppercase rounded-l-none border-none outline-none cursor-pointer hover:bg-[#003d4d] transition-all duration-500 ease-in-out">
-              Enviar Mensaje
+              Enviar
             </button>
           </div>
 
