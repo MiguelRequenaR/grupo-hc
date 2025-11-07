@@ -13,7 +13,7 @@ export default function AboutCta() {
       >
         <div className="absolute inset-0 bg-black/50"></div>
 
-        <div className="px-4 md:mx-60 mx-auto w-full max-w-7xl z-10 space-y-6">
+        <div className="px-4 mx-auto w-full max-w-7xl z-10 space-y-6">
           <p
             className="text-white text-xl md:text-2xl font-bold"
             data-aos="fade-up"

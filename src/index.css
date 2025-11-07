@@ -1,8 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap'); */
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'ArtegraSoft';
+  src: url('/fonts/ArtegraSoft-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'ArtegraSoft', sans-serif;
+}
+
 body {
-  font-family: 'Comfortaa', sans-serif;
+  font-family: inherit;
 }
 
 /* Estilos para navbar responsive */

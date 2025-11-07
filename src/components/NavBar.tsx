@@ -1,11 +1,21 @@
 import { Facebook, Instagram, Twitter, Youtube, MapPin, Timer, Mail, Phone, Menu, X } from "lucide-react"
 import logoP from "../assets/logoP.png"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useNavigate, Link } from "react-router-dom"
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
   const navigate = useNavigate()
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const menuItems = [
     { label: "Inicio", href: "/" },
@@ -21,10 +31,10 @@ export default function NavBar() {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
-      <div className="bg-[#f68b21] text-white hidden lg:flex justify-around items-center p-3">
+      <div className={`bg-[#f68b21] text-white hidden lg:flex justify-around items-center transition-all duration-300 ease-in-out overflow-hidden ${isScrolled ? 'max-h-0 p-0 opacity-0' : 'max-h-20 p-3 opacity-100'}`}>
         <div className="flex items-center gap-2 font-bold">
           <MapPin />
-          <span>Ubicación: Av. Real Huancayo, PE</span>
+          <span>Ubicación: Av. La Victoria, Lima</span>
         </div>
         <div className="border-l border-white h-8"></div>
         <div className="flex items-center gap-2 font-bold">

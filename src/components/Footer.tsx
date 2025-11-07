@@ -65,7 +65,7 @@ export default function Footer() {
           <ul className="space-y-2 text-gray-200 text-sm md:text-[16px]">
             <li>Email: info@grupo-hc.com</li>
             <li>Teléfono: (+51) 999 888 777</li>
-            <li>Av. Real Huancayo, PE</li>
+            <li>Av. La Victoria, Lima</li>
             <li>Lun-Vie: 8:00 - 18:00</li>
           </ul>
         </div>

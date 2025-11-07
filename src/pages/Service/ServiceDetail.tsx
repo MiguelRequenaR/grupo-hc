@@ -27,7 +27,7 @@ export default function ServiceDetail() {
         imageUrl={service.image}
       />
       
-      <section className="max-w-7xl mx-auto py-20 flex flex-col md:flex-row  gap-10">
+      <section className="max-w-7xl mx-auto py-20 flex flex-col md:flex-row gap-10">
         <div className="w-full md:w-1/3 relative md:mb-0" data-aos="fade-right">
           <div className="sticky top-8 md:top-44">
             <img
@@ -49,7 +49,7 @@ export default function ServiceDetail() {
           </div>
         </div>
         <div className="w-full md:w-2/3 p-5 md:p-0" data-aos="fade-up">
-          <div className="space-y-5">
+          <div className="space-y-6">
             <img 
               src={service.image} 
               alt={service.title} 
